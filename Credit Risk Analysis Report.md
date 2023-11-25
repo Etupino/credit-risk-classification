@@ -1,11 +1,11 @@
-Credit Risk Analysis Report
+# Credit Risk Analysis Report
 
 Overview of the Analysis:
 The purpose of this credit risk analysis is to develop and evaluate a machine learning model that can predict the creditworthiness of loan applicants. The analysis focuses on assessing the performance of a logistic regression model in predicting healthy (low-risk) and non-healthy (high-risk) loans.
 
-Results:
+**Results:**
 
-Original Data Model:
+**Original Data Model:**
 
 * Accuracy Score: 95%  
 * Confusion Matrix  
@@ -19,7 +19,7 @@ Precision (Non-Healthy Loans): 85%
 Recall (Healthy Loans): 100%
 Recall (Non-Healthy Loans): 85%
 
-Resampled Data Model:
+**Resampled Data Model:**
 
 * Accuracy Score: 99%  
 * Confusion Matrix:
@@ -34,17 +34,17 @@ Precision (Non-Healthy Loans): 3%
 Recall (Healthy Loans): 99%
 Recall (Non-Healthy Loans): 0.01%
 
-Summary:
+**# Summary:**
 
-Original Data Model:
+**Original Data Model:**
 
 The original data logistic regression model achieved a balanced accuracy of 95%. However, the imbalance in the dataset heavily influenced the results. The model tended to predict healthy loans accurately but struggled with non-healthy loans, as reflected in the precision and recall scores. The model's precision for non-healthy loans was 85%, and the recall was 85%.
 
-Resampled Data Model:
+**Resampled Data Model:**
 
 The logistic regression model trained on resampled data, specifically using Random Oversampling, showed remarkable improvement. The accuracy score increased to 99%, indicating better overall performance. The oversampled model demonstrated higher recall for non-healthy loans, addressing the issue of misclassifying non-healthy loans as healthy. The recall for non-healthy loans increased from 85% to 99%.
 
-Recommendation:
+**Recommendation:**
 
 The oversampled model is recommended for use by the lending company. The improved accuracy and, more importantly, the significantly enhanced recall for non-healthy loans make this model more reliable in identifying high-risk loans. Given the potential financial impact of misclassifying non-healthy loans, the oversampled model provides a better balance between precision and recall, making it a more suitable choice for credit risk assessment.
 
