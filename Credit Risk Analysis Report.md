@@ -37,12 +37,15 @@ Recall (Non-Healthy Loans): 0.01%
 Summary:
 
 Original Data Model:
+
 The original data logistic regression model achieved a balanced accuracy of 95%. However, the imbalance in the dataset heavily influenced the results. The model tended to predict healthy loans accurately but struggled with non-healthy loans, as reflected in the precision and recall scores. The model's precision for non-healthy loans was 85%, and the recall was 85%.
 
 Resampled Data Model:
+
 The logistic regression model trained on resampled data, specifically using Random Oversampling, showed remarkable improvement. The accuracy score increased to 99%, indicating better overall performance. The oversampled model demonstrated higher recall for non-healthy loans, addressing the issue of misclassifying non-healthy loans as healthy. The recall for non-healthy loans increased from 85% to 99%.
 
 Recommendation:
+
 The oversampled model is recommended for use by the lending company. The improved accuracy and, more importantly, the significantly enhanced recall for non-healthy loans make this model more reliable in identifying high-risk loans. Given the potential financial impact of misclassifying non-healthy loans, the oversampled model provides a better balance between precision and recall, making it a more suitable choice for credit risk assessment.
 
 This recommendation is based on the understanding that correctly identifying non-healthy loans is crucial for a lending company to minimize financial risks. The oversampled model demonstrates a higher level of sensitivity to non-healthy loans, making it a more robust solution for credit risk analysis.
